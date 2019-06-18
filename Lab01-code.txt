@@ -1,0 +1,26 @@
+// Step 1 จัดกึ่งกลาง
+<center> </center>
+
+// Step 2 เพิ่มแท็ก h1-h6
+<h1> </h1>
+
+// Step 3 เปลี่ยนสีฟอนต์
+<font color="red"> </font>
+
+// Step 4 เปลี่ยนขนาดฟอนต์
+<font size="30px"> </font>
+
+// Step 4 เพิ่ม paragraph
+<p> </p>
+
+// Step 4 จัดฟอนต์ ตัวหนา ตัวเอียง ขีดเส้นใต้
+<b> </b>
+<i> </i>
+<u> </u>
+
+// Step 5 เพิ่มเส้นคั่น
+<hr />
+
+// Strp 6 เพิ่ม Hyper Link และ Anchor
+<a href="http://www.google.co.th"> </a>
+<a href="#anchor1"> </a>

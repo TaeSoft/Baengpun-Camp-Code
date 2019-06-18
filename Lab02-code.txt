@@ -1,0 +1,57 @@
+// Step 1 เพิ่ม css inline
+span style="font-weight: bold"> </span>
+
+// Step 2 เพิ่ม css infile
+	<style>
+	p.p1 {
+		text-align: center;
+		width: 80%;
+		border: 1px solid;
+		margin: 0 auto;
+		padding: 10px;
+		border-radius: 5px;
+	}
+	
+	h1 {
+	color: red;
+	}
+	
+	.p2 {
+		font-size: 30px;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	a, a.visited {
+		font-size: 20px;
+		color: pink;
+	}
+	
+	a:hover {
+		color: blue;
+		font-size: 1.5em;
+		text-decoration: underline;
+		font-weight: bold;
+	}
+	
+	img {
+		/*display: inline-block;*/
+		border: solid 3px white;
+		/*margin: 0 auto;*/
+	}
+	
+	img:hover {
+		box-shadow: 0 15px 25px rgba(255,0,0,0.8);
+	}
+	</style>
+
+// Step 3 CSS external file
+1. สร้างไฟล์ Lab02Style.css
+	body {
+		color: white;
+		background: rgb(2,0,36);
+	}
+2. เพิ่ม link file
+<link rel="stylesheet" type="text/css" href="Lab02Style.css" />

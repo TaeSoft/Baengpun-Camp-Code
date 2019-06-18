@@ -1,0 +1,29 @@
+// Step 1 เพิ่ม PHP code
+<?php
+	$host = "127.0.0.1";
+	$username = "root";
+	$password = "";
+
+	$conn = new mysqli($host, $username, $password);
+	if($conn->connect_errno){
+		die($conn->connect_error);
+	}
+
+	mysqli_set_charset($conn,"utf8");
+	mysqli_select_db($conn, 'geothailand');
+	$result = $conn->query("SELECT * FROM `geodata_th_provinces`");
+
+	$rows = array();
+	while ($x = $result->fetch_assoc()){
+		$rows[] = $x;
+	}
+
+?>
+
+// Step 2 แสดงรายชื่องจังหวัด
+		<?php foreach($rows as $line): ?>
+			<tr>
+				<td><?php echo $line['province_id']?></td>
+				<td><?php echo $line['province_name']?></td>
+			</tr>
+		<?php endforeach;?>

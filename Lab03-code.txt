@@ -1,0 +1,15 @@
+// Step 1 เพิ่ม JS code
+	<script type="text/javascript">
+		function change_text()
+		{
+			var input_val = document.getElementById("input1").value;
+			document.getElementById("output1").innerHTML = input_val;
+		}
+	</script>
+
+// Step 2 เพิ่ม id และ event
+	<input type="text" id="input1">
+	<button onclick="change_text()">เปลี่ยนเลยยย!</button>
+
+// Step 3 เพิ่มคำสั่ง JS
+	alert(input_val);

@@ -1,0 +1,13 @@
+// Step 1 เพิ่ม PHP code
+<?php
+	$output = isset($_POST['input_value']) ? date('Y-m-d h:i:s') . ' : ' . $_POST['input_value'] : 'ลองพิมพ์ดูซิ :D';
+?>
+
+// Step 2 เพิ่ม คำสั่ง var_dump()
+	var_dump($_POST)
+
+// Step 3 เพิ่มคำสั่ง PHP
+	<h3><span><?php echo $output; ?></span></h3>
+
+// Step 4 เพิ่ม attibute value ในแท็ก input
+<input type="text" name="input_value" value="<?php echo isset($_POST['input_value']) ? $_POST['input_value'] : null ?>">
